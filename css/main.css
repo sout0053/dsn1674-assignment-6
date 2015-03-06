@@ -1,0 +1,76 @@
+html {
+  box-sizing: border-box;
+  font-family: 'Contrail One', cursive;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
+
+div {
+  width: 320px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.body {
+  width: 320px;
+  display: block;
+}
+
+.brain {
+  width: 46px;
+  position: absolute;
+  left: 138px;
+  top: 6px;
+  transition: all 250ms linear;
+}
+
+.left {
+  width: 125px;
+  position: absolute;
+  left: 36px;
+  top: -36px;
+  transition: all 250ms linear;
+}
+
+.right {
+  width: 125px;
+  position: absolute;
+  right: 34px;
+  top: -36px;
+  transition: all 250ms linear;
+}
+
+header {
+  padding: 3em 0 0 0;
+  background-color: #2c3950;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  background-color: #1a2230;
+  padding: .5em;
+  margin: 0;
+}
+
+.robot:hover .left {
+  left: 10px;
+}
+
+.robot:hover .right{
+  right: 10px;
+}
+
+.robot:hover .brain{
+  top: -10px;
+}
